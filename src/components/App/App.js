@@ -10,6 +10,9 @@ import SignOut from '../SignOut/SignOut'
 import ChangePassword from '../ChangePassword/ChangePassword'
 import IndexQuestions from '../IndexQuestions/IndexQuestions'
 import Question from '../Question/Question'
+import QuestionEdit from '../QuestionEdit/QuestionEdit'
+import QuestionCreate from '../QuestionCreate/QuestionCreate'
+import AnswerCreate from '../AnswerCreate/AnswerCreate'
 
 class App extends Component {
   constructor () {
@@ -56,11 +59,20 @@ class App extends Component {
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
           )} />
-          <Route exact path='/questions/:id' component={Question} render={() => (
-            <Question msgAlert={this.msgAlert} user={user} />
+          <Route user={user} exact path='/questions/:id' render={({ match }) => (
+            <Question msgAlert={this.msgAlert} user={user} match={match} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/questions/:id/edit' render={({ match }) => (
+            <QuestionEdit msgAlert={this.msgAlert} user={user} match={match} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/create-question' render={() => (
+            <QuestionCreate msgAlert={this.msgAlert} user={user} />
           )} />
           <Route exact path='/questions' render={() => (
             <IndexQuestions msgAlert={this.msgAlert} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/create-answer/:id' render={({ match }) => (
+            <AnswerCreate msgAlert={this.msgAlert} user={user} match={match} />
           )} />
         </main>
       </Fragment>
