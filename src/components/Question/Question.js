@@ -75,24 +75,43 @@ const Question = (props, match, location, cancelPath) => {
 
   questionId = question.id
   // console.log(questionId)
+  // console.log('props', props)
+  // console.log('question', question.user.id)
+  let jsx
+  if (question.user.id === props.user.id) {
+    jsx = (
+      <Layout>
+        <h4>{question.title}</h4>
+        <p>Description: {question.description}</p>
+        <button onClick={destroy}>Delete Question</button>
+        <Link to={`/questions/${props.match.params.id}/edit`}>
+          <button>Edit</button>
+        </Link>
+        <Link to={`/create-answer/${props.match.params.id}`}>
+          <button>Answer</button>
+        </Link>
 
-  return (
-    <Layout>
-      <h4>{question.title}</h4>
-      <p>Description: {question.description}</p>
-      <button onClick={destroy}>Delete Question</button>
-      <Link to={`/questions/${props.match.params.id}/edit`}>
-        <button>Edit</button>
-      </Link>
-      <Link to={`/create-answer/${props.match.params.id}`}>
-        <button>Answer</button>
-      </Link>
+        <p>Answers: {answersJsx}</p>
 
-      <p>Answers: {answersJsx}</p>
+        <Link to="/questions">Back to all questions</Link>
+      </Layout>
+    )
+  } else {
+    jsx = (
+      <Layout>
+        <h4>{question.title}</h4>
+        <p>Description: {question.description}</p>
+        <Link to={`/create-answer/${props.match.params.id}`}>
+          <button>Answer</button>
+        </Link>
 
-      <Link to="/questions">Back to all questions</Link>
-    </Layout>
-  )
+        <p>Answers: {answersJsx}</p>
+
+        <Link to="/questions">Back to all questions</Link>
+      </Layout>
+    )
+  }
+  return jsx
 }
 export default Question
 export { questionId }

@@ -14,6 +14,7 @@ import QuestionEdit from '../QuestionEdit/QuestionEdit'
 import QuestionCreate from '../QuestionCreate/QuestionCreate'
 import AnswerCreate from '../AnswerCreate/AnswerCreate'
 import AnswerEdit from '../AnswerEdit/AnswerEdit'
+import Home from '../Home/Home'
 
 class App extends Component {
   constructor () {
@@ -48,6 +49,9 @@ class App extends Component {
           />
         ))}
         <main className="container">
+          <Route exact path='/' render={() => (
+            <Home msgAlert={this.msgAlert} />
+          )} />
           <Route path='/sign-up' render={() => (
             <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
           )} />
@@ -62,7 +66,7 @@ class App extends Component {
           )} />
 
           {/* This is where the questions start */}
-          <Route user={user} exact path='/questions/:id' render={({ match }) => (
+          <AuthenticatedRoute user={user} exact path='/questions/:id' render={({ match }) => (
             <Question msgAlert={this.msgAlert} user={user} match={match} />
           )} />
           <AuthenticatedRoute user={user} exact path='/questions/:id/edit' render={({ match }) => (

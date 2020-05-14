@@ -41,6 +41,7 @@ const QuestionCreate = (props, match, location, cancelPath) => {
     return <Redirect to={`/questions/${createdQuestionId}`} />
   }
 
+  // const isSignedIn = props.user.id
   return (
     <Layout>
       <QuestionForm
