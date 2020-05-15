@@ -10,7 +10,7 @@ Started by making sure the app is connected to the api so that users can create 
 ## Deployed sites
 
 Front end (https://depalmafarr.github.io/qa-capstone-client/#/).
-Back end (https://git.heroku.com/shrouded-ocean-15397.git).
+Back end (https://shrouded-ocean-15397.herokuapp.com/).
 
 ## Getting Started
 
