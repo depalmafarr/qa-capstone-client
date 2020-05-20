@@ -63,15 +63,30 @@ const Question = (props, match, location, cancelPath) => {
     } />
   }
 
-  // console.log(question.answers)
-  const answersJsx = question.answers.map(answer => (
-    <li key={answer.id}>{answer.response}
-      <Link to={`/answers/${answer.id}/edit`} answer={answer}>
-        <button>Edit</button>
-      </Link>
-      <button id={answer.id} key={answer.id} onClick={destroyA}>Delete Answer</button>
-    </li>
-  ))
+  // console.log('line 66', props.user.id)
+  const answersJsx = question.answers.map(answer => {
+    console.log(answer.user.id)
+    return answer.user.id === props.user.id
+      ? <li key={answer.id}>{answer.response}
+        <Link to={`/answers/${answer.id}/edit`} answer={answer}>
+          <button>Edit</button>
+        </Link>
+        <button id={answer.id} key={answer.id} onClick={destroyA}>Delete Answer</button>
+      </li> : <li key={answer.id}>{answer.response}</li>
+  }
+  //   (
+  //   if (answer.user.id === props.user.id) {
+  //     <li key={answer.id}>{answer.response}
+  //       <Link to={`/answers/${answer.id}/edit`} answer={answer}>
+  //         <button>Edit</button>
+  //       </Link>
+  //       <button id={answer.id} key={answer.id} onClick={destroyA}>Delete Answer</button>
+  //     </li>
+  //   } else {
+  //   <li key={answer.id}>{answer.response}</li>
+  // }
+  // )
+  )
 
   questionId = question.id
   // console.log(questionId)
