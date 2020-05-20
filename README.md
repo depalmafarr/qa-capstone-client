@@ -50,6 +50,10 @@ ERD - https://drive.google.com/file/d/1ccL-dG3nDeeb9zx_aUaKRXBwtac60jLv/view?usp
 * [herokuapp api](https://www.heroku.com/)
 * [bootstrap] - used for dropdowns
 
+## Image of site
+
+![](images/MixerQAScreenshot.png)
+
 ## Backend Repo
 
 For the back end of this project, see (https://github.com/depalmafarr/qa-capstone-api).
