@@ -6,7 +6,6 @@ Sign in and use this app to keep ask people questions and allow them to answer y
 
 Started by making sure the app is connected to the api so that users can create accounts and ask quesitons in a user friendly way. When I hit issues I used research and other classmates to get through building the front end. There are many more styling choices that must be made in the future for this site.
 
-
 ## Deployed sites
 
 Front end (https://depalmafarr.github.io/qa-capstone-client/#/).
@@ -57,6 +56,9 @@ ERD - https://drive.google.com/file/d/1ccL-dG3nDeeb9zx_aUaKRXBwtac60jLv/view?usp
 ## Backend Repo
 
 For the back end of this project, see (https://github.com/depalmafarr/qa-capstone-api).
+
+- npm run to run local front end, npm run deploy to deploy
+- , git push heroku master to push backend
 
 ## Versioning
 
