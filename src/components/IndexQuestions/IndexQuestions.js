@@ -25,7 +25,7 @@ const IndexQuestions = (props) => {
     <Layout>
       <div>
         <h4>{questions.title}</h4>
-        <p>Questions: {questions.description}</p>
+        <p>Unsolved Questions: {questions.description}</p>
 
         { questionsJsx }
       </div>
