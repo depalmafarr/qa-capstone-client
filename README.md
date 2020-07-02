@@ -57,7 +57,7 @@ ERD - https://drive.google.com/file/d/1ccL-dG3nDeeb9zx_aUaKRXBwtac60jLv/view?usp
 
 For the back end of this project, see (https://github.com/depalmafarr/qa-capstone-api).
 
-- npm run to run local front end, npm run deploy to deploy
+- npm start to run local front end, npm run deploy to deploy
 - bin/rails server to run local back end, git push heroku master to push backend
 
 ## Versioning
