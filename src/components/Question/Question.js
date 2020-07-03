@@ -97,7 +97,7 @@ const Question = (props, match, location, cancelPath) => {
     jsx = (
       <Layout>
         <br></br>
-        <h4 className="question">{question.title}</h4>
+        <h4 className="questionTitle">{question.title}</h4>
         <p>Description: {question.description}</p>
         <button onClick={destroy}>Delete Question</button>
         <Link to={`/questions/${props.match.params.id}/edit`}>
@@ -115,7 +115,7 @@ const Question = (props, match, location, cancelPath) => {
   } else {
     jsx = (
       <Layout>
-        <h4>{question.title}</h4>
+        <h4 className="questionTitle">{question.title}</h4>
         <p>Description: {question.description}</p>
         <Link to={`/create-answer/${props.match.params.id}`}>
           <button>Answer</button>
