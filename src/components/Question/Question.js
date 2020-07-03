@@ -96,7 +96,8 @@ const Question = (props, match, location, cancelPath) => {
   if (question.user.id === props.user.id) {
     jsx = (
       <Layout>
-        <h4>{question.title}</h4>
+        <br></br>
+        <h4 className="question">{question.title}</h4>
         <p>Description: {question.description}</p>
         <button onClick={destroy}>Delete Question</button>
         <Link to={`/questions/${props.match.params.id}/edit`}>
