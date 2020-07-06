@@ -9,11 +9,15 @@ body {
   text-align: center;
 }
 
-#Questions {
+#questionTitle {
   border: 1px solid white;
   padding: 8px;
-  margin-top: 20px;
+  margin-top: 12px;
   list-style-type: none;
+}
+
+#answerTitle {
+  margin-top: 40px;
 }
 
 .questionTitle {
