@@ -121,7 +121,7 @@ const Question = (props, match, location, cancelPath) => {
           <button>Answer</button>
         </Link>
 
-        <p>Answers: {answersJsx}</p>
+        <p id="answerTitle">Answers: {answersJsx}</p>
 
         <Link to="/questions">Back to all questions</Link>
       </Layout>
