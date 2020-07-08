@@ -15,7 +15,7 @@ const IndexQuestions = (props) => {
   }, [])
 
   const questionsJsx = questions.map(question => (
-    <li id="Questions" key={question.id}>
+    <li id="questionTitle" key={question.id}>
       <Link to={`/questions/${question.id}`}>
         {question.title}</Link>
     </li>
