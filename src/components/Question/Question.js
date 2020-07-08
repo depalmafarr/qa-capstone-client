@@ -67,7 +67,7 @@ const Question = (props, match, location, cancelPath) => {
   const answersJsx = question.answers.map(answer => {
     // console.log(answer.user.id)
     return answer.user.id === props.user.id
-      ? <li key={answer.id}>{answer.response}
+      ? <li id="answerList" key={answer.id}>{answer.response}
         <Link to={`/answers/${answer.id}/edit`} answer={answer}>
           <button>Edit</button>
         </Link>
