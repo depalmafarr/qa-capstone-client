@@ -10,7 +10,7 @@ body {
 }
 
 #questionTitle {
-  border: 1px solid lightblue;
+  border: 1px solid #1fbaed;
   padding: 8px;
   margin-top: 12px;
   list-style-type: none;
@@ -21,10 +21,14 @@ body {
 }
 
 #answerList {
-  border: 1px solid lightblue;
+  border: 1px solid #1fbaed;
   padding: 8px;
   margin-top: 12px;
   list-style-type: none;
+}
+
+#Header {
+  background-color: #1fbaed;
 }
 
 .questionTitle {
