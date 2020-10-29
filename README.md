@@ -2,6 +2,8 @@
 
 Sign in and use this app to keep ask people questions and allow them to answer you at any time!
 
+This app was created for mixer.com which no longer exists as such and is now Facebook.gg
+
 # Mixer Q&A Client dev process
 
 Started by making sure the app is connected to the api so that users can create accounts and ask quesitons in a user friendly way. When I hit issues I used research and other classmates to get through building the front end. There are many more styling choices that must be made in the future for this site.
