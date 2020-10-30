@@ -1,6 +1,6 @@
 # Mixer Q&A Client
 
-Sign in and use this app to keep ask people questions and allow them to answer you at any time!
+Sign in and use this app to keep ask people questions about mixer and allow them to answer you at any time!
 
 This app was created for mixer.com which no longer exists as such and is now Facebook.gg
 
