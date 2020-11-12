@@ -2,7 +2,7 @@
 
 Sign in and use this app to keep ask people questions about mixer and allow them to answer you at any time!
 
-This app was created for mixer.com which no longer exists as such and is now Facebook.gg, some features may indicate different sites as the app is updated.
+This app was created for mixer.com which no longer exists as such and is now Facebook.com/gaming, some features may indicate different sites as the app is updated.
 
 # Mixer Q&A Client dev process
 
