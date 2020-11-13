@@ -21,7 +21,7 @@ Can be made and grunt served onto your server from the link to the project here 
 
 - Question/answer voting +1 -1
 - Specific sections you can ask and answer in
-- Styling changes (so many)
+- Styling changes
 
 
 ### Wireframes, User stories, and ERD
