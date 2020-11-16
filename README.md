@@ -15,7 +15,7 @@ Back end (https://shrouded-ocean-15397.herokuapp.com/).
 
 ## Getting Started
 
-Can be made and grunt served onto your server from the link to the project here (https://github.com/depalmafarr/qa-capstone-client)
+Can be forked and grunt served onto your server from the link to the project here (https://github.com/depalmafarr/qa-capstone-client)
 
 ### Future fixes/issues
 
