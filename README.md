@@ -42,7 +42,7 @@ ERD - https://drive.google.com/file/d/1ccL-dG3nDeeb9zx_aUaKRXBwtac60jLv/view?usp
 
 * [React] Front end language
 * [Ruby on Rails] Ruby on Rails for server setup
-* [HTML]
+* [HTML] - Basic Front-end styling
 * [SCSS](https://sass-lang.com/) - Style sheets
 * [JavaScript] - Used to create front end lists
 * [Jquery]
