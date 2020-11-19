@@ -19,7 +19,7 @@ Can be forked and grunt served onto your server from the link to the project her
 
 ### Future fixes/issues
 
-- Question/answer voting +1 -1
+- Question/answer voting, upvote/downvote system
 - Specific sections you can ask and answer in
 - Styling changes
 
